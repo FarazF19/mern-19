@@ -7,4 +7,6 @@ const even = () => {
     a==2%0 ? console.log(even):console.log("odd");
  }
 
- 
+ const palindrome = ()=>{
+    console.log("palindrome..")
+ }
