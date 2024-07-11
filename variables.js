@@ -40,4 +40,4 @@ console.log(b);
 
 // Template Strings
 let name = "Faraz";
-{`Hello ${name}`}
+{ `Hello ${name}` };
