@@ -2,7 +2,7 @@ function recPromise(){
  
 const promise = new Promise((res,rej)=>{
     setTimeout(()=>{
-    res(new Date().toString());
+    res(new Date().toLocaleTimeString());
 }
 ,1000);
 
