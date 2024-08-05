@@ -19,7 +19,7 @@ module.exports = {
             })
           } catch (error) {
              return res.send({
-                error: error,
+                error: error, 
              })
           }
     }
