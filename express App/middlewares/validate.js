@@ -9,10 +9,10 @@ const UserValidate = async (req, res, next) => {
   });
 
   try {
-    await Userschema.validateAsync({ username, password });
-    return res.send("UserValidated");
+    await Userschema.validateAsync(req.body);
+    next();
   } catch (err) {
-    console.log("Error");
+    return res.send(err);
   }
   next();
 };
