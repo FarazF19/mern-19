@@ -7,7 +7,7 @@ var { UserValidate } = require("./middlewares/validate");
 
 
 
-
+var userRouter = require("./routes/userRouter");
 var authRouter = require("./routes/authRouter");
 var stdRouter = require("./routes/studentRouter");
 var tutorRouter = require('./routes/tutorRouter')
@@ -22,6 +22,7 @@ app.use(cookieParser());
 
 //Routers/ middlewares
 app.use("/auth", UserValidate, authRouter);
+app.use("/users", userRouter)
 app.use('/student', stdRouter)
 app.use("/tutor", tutorRouter)
 app.use("/admin", adminRouter)
@@ -38,7 +39,7 @@ app.use(function (err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.render("error");
+  res.send("error");
 });
 
 module.exports = app;
