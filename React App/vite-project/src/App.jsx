@@ -21,8 +21,9 @@ function App() {
       />
       <button onClick={addItemHandler}>Add Item</button>
       {items.map((item, index, arr) => {
-        return <Counter itemName={item} />;
+        return <Counter key={index} itemName={item} />;
       })}
+      <Counter itemName="Shirt" />
     </>
   );
 }

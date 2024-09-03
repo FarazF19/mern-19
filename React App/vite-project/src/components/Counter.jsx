@@ -1,10 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Counter(props) {
   let [count, setCount] = useState(0);
   const handleCount = () => {
     setCount(count + 1);
   };
+
+  useEffect(() => {
+    console.log("UseEffect Ran for count value: ", count);
+
+    // return () => {
+    //   console.log("Cleanup for count", count);
+    // };
+  }, [count]);
   return (
     <>
       <h1>{props.itemName}</h1>
