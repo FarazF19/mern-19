@@ -12,7 +12,8 @@ function Counter(props) {
     // return () => {
     //   console.log("Cleanup for count", count);
     // };
-  }, [count]);
+  }, []);
+
   return (
     <>
       <h1>{props.itemName}</h1>
@@ -25,6 +26,7 @@ function Counter(props) {
       >
         Decrement
       </button>
+      <button onClick={props.xyz}>Delete</button>
     </>
   );
 }
