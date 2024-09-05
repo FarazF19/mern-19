@@ -22,7 +22,7 @@ function Home() {
         placeholder="Enter an item"
       />
       <button onClick={addItemHandler}>Add Item</button>
-      {items.map((item, index, arr) => {
+      {/* {items.map((item, index, arr) => {
         return (
           <Counter
             key={index}
@@ -36,7 +36,7 @@ function Home() {
             }}
           />
         );
-      })}
+      })} */}
     </>
   );
 }

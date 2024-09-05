@@ -7,8 +7,7 @@ function Counter(props) {
   };
 
   useEffect(() => {
-    console.log("UseEffect Ran for count value: ", count);
-
+    //console.log("UseEffect Ran for count value: ", count);
     // return () => {
     //   console.log("Cleanup for count", count);
     // };
