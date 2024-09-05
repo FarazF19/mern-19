@@ -8,7 +8,6 @@ const ProductsPage = () => {
 
   const fetchProducts = async () => {
     const response = await axios.get("https://fakestoreapi.com/products");
-
     setProducts(response.data);
   };
 
