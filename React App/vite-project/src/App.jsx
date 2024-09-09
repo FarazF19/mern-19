@@ -4,7 +4,7 @@ import Products from "./pages/Products";
 function App() {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
       <Products />
     </>
   );
